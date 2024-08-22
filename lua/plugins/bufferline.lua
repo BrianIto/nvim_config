@@ -23,7 +23,6 @@ diagnostics_indicator = function(count, level, diagnostics_dict, context)
 end,
      always_show_bufferline = true,
      offsets = {{ filetype = "NvimTree", text = "File Explorer", textAlign = "center"}},
- 
     },
  },
 
