@@ -9,7 +9,7 @@ return {
 	'williamboman/mason-lspconfig.nvim',
     	config = function()
       		require('mason-lspconfig').setup({
-        		ensure_installed = { 'pyright', 'tsserver', 'clangd' },  -- Add the servers you want to install
+        		ensure_installed = { 'pyright', 'tsserver', 'clangd', "gopls" },  -- Add the servers you want to install
       		})
     	end,
 	},

@@ -14,6 +14,7 @@ return {
 				"svelte",
 				"html",
 				"css",
+				"http",
 			},
         })
 	end
