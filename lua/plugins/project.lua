@@ -1,5 +1,6 @@
 return {
 	"ahmedkhalf/project.nvim",
+	requires = { "nvim-telescope/telescope.nvim" },
 	config = function()
 		require("project_nvim").setup({
 			detection_methods = { "pattern" },
