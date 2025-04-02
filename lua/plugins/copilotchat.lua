@@ -1,4 +1,5 @@
-return {
+return {}
+--[[return {
 	{
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "main",
@@ -11,4 +12,4 @@ return {
       -- See Configuration section for options
     },
   },
-}
+}--]]
