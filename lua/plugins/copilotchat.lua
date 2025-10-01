@@ -11,9 +11,6 @@ return {
 				width = 0.33,
 				relative = "editor",
 			},
-			keys = {
-				{ "<leader>cc", "<cmd>CopilotChat<cr>", desc = "Open CopilotChat" },
-			},
 		},
 		-- See Commands section for default commands if you want to lazy load on them
 	},
