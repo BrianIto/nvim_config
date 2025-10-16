@@ -15,9 +15,11 @@ return {
 			-- Ensure Mason is set up
 			require("mason").setup()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "ts_ls", "lua_ls", "gopls" },
+				ensure_installed = { "lua_ls", "gopls", "biome" },
 			})
 			vim.lsp.enable("ts_ls")
+			vim.lsp.enable("biome")
+			vim.lsp.enable("tailwindcss")
 			vim.lsp.config("lua_ls", {
 				settings = {
 					Lua = {
@@ -29,6 +31,12 @@ return {
 			})
 			vim.lsp.enable("lua_ls")
 			vim.lsp.enable("gopls")
+			vim.api.nvim_set_keymap(
+				"n",
+				"<leader>oi",
+				[[:lua vim.lsp.buf.code_action({ context = { only = { "source.organizeImports" } }, apply = true })<CR>]],
+				{ noremap = true, silent = true }
+			)
 			--lspconfig.ts_ls.setup{
 			--	init_options = {
 			--plugins = {
